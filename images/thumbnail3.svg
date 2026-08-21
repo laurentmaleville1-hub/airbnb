@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="tiles" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E0F6FF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B0E0E6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Bathroom background -->
+  <rect x="0" y="0" width="200" height="200" fill="#E0F6FF"/>
+  
+  <!-- Shower area -->
+  <rect x="20" y="30" width="80" height="100" fill="#FFFFFF" stroke="#A0A0A0" stroke-width="2"/>
+  <rect x="25" y="35" width="70" height="7" fill="#C0C0C0"/>
+  <rect x="25" y="50" width="70" height="7" fill="#C0C0C0"/>
+  <rect x="25" y="65" width="70" height="7" fill="#C0C0C0"/>
+  
+  <!-- Shower head -->
+  <circle cx="60" cy="20" r="5" fill="#8B4513"/>
+  <rect x="58" y="25" width="4" height="5" fill="#8B4513"/>
+  
+  <!-- Sink -->
+  <ellipse cx="150" cy="120" rx="30" ry="15" fill="#FFFFFF" stroke="#A0A0A0" stroke-width="2"/>
+  <circle cx="150" cy="120" r="5" fill="#C0C0C0"/>
+  
+  <!-- Faucet -->
+  <rect x="145" y="110" width="10" height="5" fill="#C0C0C0"/>
+  <rect x="147" y="105" width="6" height="5" fill="#C0C0C0"/>
+  
+  <!-- Mirror -->
+  <rect x="130" y="40" width="40" height="50" fill="#C0C0C0" stroke="#808080" stroke-width="1"/>
+  
+  <!-- Towel rack -->
+  <rect x="10" y="150" width="50" height="5" fill="#8B4513"/>
+  <rect x="10" y="150" width="5" height="20" fill="#8B4513"/>
+  <rect x="55" y="150" width="5" height="20" fill="#8B4513"/>
+  
+  <!-- Towel -->
+  <rect x="15" y="155" width="40" height="15" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Toilet paper holder -->
+  <circle cx="180" cy="160" r="3" fill="#8B4513"/>
+  <rect x="175" y="160" width="10" height="2" fill="#8B4513"/>
+  
+  <!-- Toilet paper roll -->
+  <circle cx="180" cy="160" r="8" fill="#FFFFFF" stroke="#E0E0E0" stroke-width="1"/>
+  
+  <!-- Text -->
+  <rect x="0" y="180" width="200" height="20" fill="rgba(0,0,0,0.7)"/>
+  <text x="100" y="195" text-anchor="middle" fill="white" font-size="10" font-family="Arial, sans-serif">
+    Salle de bain
+  </text>
+</svg>
