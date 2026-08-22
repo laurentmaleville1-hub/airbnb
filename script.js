@@ -1,6 +1,6 @@
 /**
  * Le cocon de la Londonnerie - Airbnb Clone
- * JavaScript for interactive functionality
+ * JavaScript for interactive functionality with Unsplash images
  */
 
 // ===== DOM Elements =====
@@ -19,12 +19,19 @@ const guestInput = document.getElementById('guest-count');
 // ===== Gallery Functionality =====
 let currentImageIndex = 0;
 const galleryImages = [
-    'images/main.svg',
-    'images/thumbnail1.svg',
-    'images/thumbnail2.svg',
-    'images/thumbnail3.svg',
-    'images/thumbnail4.svg',
-    'images/thumbnail5.svg'
+    'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1582582494705-f8ce0b04046a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+    'https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80'
+];
+
+const galleryDescriptions = [
+    'Appartement cosy avec décor britannique - Salon et cuisine',
+    'Chambre confortable avec lit double',
+    'Salle de bain moderne avec douche',
+    'Espace extérieur privé avec barbecue électrique',
+    'Vue sur le jardin verdoyant'
 ];
 
 // Initialize gallery
@@ -32,6 +39,7 @@ function initGallery() {
     // Set main image
     if (mainImage && galleryImages[0]) {
         mainImage.src = galleryImages[0];
+        mainImage.alt = galleryDescriptions[0];
     }
     
     // Thumbnail click handlers
@@ -128,6 +136,7 @@ function navigateModalGallery(direction) {
 function updateMainImage() {
     if (mainImage && galleryImages[currentImageIndex]) {
         mainImage.src = galleryImages[currentImageIndex];
+        mainImage.alt = galleryDescriptions[currentImageIndex];
     }
 }
 
@@ -141,6 +150,7 @@ function updateModalImage() {
     const modalImage = document.getElementById('modal-image');
     if (modalImage && galleryImages[currentImageIndex]) {
         modalImage.src = galleryImages[currentImageIndex];
+        modalImage.alt = galleryDescriptions[currentImageIndex];
     }
 }
 
@@ -511,7 +521,7 @@ const serviceFee = 0; // Included
 
 function calculateTotalPrice() {
     let totalNights = 0;
-    let totalPrice = 0;
+    let totalPrice = basePrice; // Default to 1 night
     
     if (selectedCheckin && selectedCheckout) {
         const timeDiff = selectedCheckout.getTime() - selectedCheckin.getTime();
@@ -529,6 +539,15 @@ function calculateTotalPrice() {
     const priceBreakdown = document.querySelector('.price-breakdown.total span:last-child');
     if (priceBreakdown) {
         priceBreakdown.innerHTML = `<strong>€${totalPrice || basePrice}</strong>`;
+    }
+    
+    // Update first price breakdown line
+    const firstBreakdown = document.querySelector('.price-breakdown:first-child');
+    if (firstBreakdown) {
+        firstBreakdown.innerHTML = `
+            <span>€${basePrice} x ${totalNights || 1} nuit${totalNights > 1 ? 's' : ''}</span>
+            <span>€${basePrice * (totalNights || 1)}</span>
+        `;
     }
 }
 
@@ -550,7 +569,9 @@ function initBooking() {
             }
             
             // In a real app, this would submit to the server
-            alert(`Réservation pour ${formatDate(selectedCheckin)} au ${formatDate(selectedCheckout)} pour ${total} voyageur(s)`);
+            const checkinDate = formatDate(selectedCheckin);
+            const checkoutDate = formatDate(selectedCheckout);
+            alert(`Réservation pour ${checkinDate} au ${checkoutDate} pour ${total} voyageur(s)\nPrix total: €${basePrice * Math.ceil((selectedCheckout - selectedCheckin) / (1000 * 60 * 60 * 24))}`);
         });
     }
 }
@@ -679,14 +700,19 @@ function initScrollToTop() {
     });
 }
 
-// ===== Image Loading Fallback =====
-function initImageFallback() {
-    const images = document.querySelectorAll('img');
+// ===== Region Cards Interaction =====
+function initRegionCards() {
+    const regionCards = document.querySelectorAll('.region-card');
     
-    images.forEach(img => {
-        img.addEventListener('error', () => {
-            // Use a placeholder image
-            img.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAwIiBoZWlnaHQ9IjE1MCIgdmlld0JveD0iMCAwIDIwMCAxNTAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxyZWN0IHdpZHRoPSIyMDAiIGhlaWdodD0iMTUwIiBmaWxsPSIjRkY1QTU5Ii8+Cjx0ZXh0IHg9IjEwMCIgeT0iNzUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iI0ZGN0FGRiIgdGV4dC1hbmNob3I9Im1pZGRsZSI+SW1hZ2Ugbm90IGZvdW5kPC90ZXh0Pgo8L3N2Zz4=';
+    regionCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const overlay = card.querySelector('.region-overlay');
+            if (overlay) {
+                overlay.style.background = 'linear-gradient(to top, rgba(0,0,0,0.9), transparent)';
+                setTimeout(() => {
+                    overlay.style.background = 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)';
+                }, 200);
+            }
         });
     });
 }
@@ -698,14 +724,16 @@ function initLazyLoading() {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const img = entry.target;
-                    img.src = img.dataset.src || img.src;
+                    if (img.dataset.src) {
+                        img.src = img.dataset.src;
+                    }
                     img.classList.add('loaded');
                     observer.unobserve(img);
                 }
             });
         });
         
-        document.querySelectorAll('img').forEach(img => {
+        document.querySelectorAll('img[loading="lazy"]').forEach(img => {
             imageObserver.observe(img);
         });
     }
@@ -723,14 +751,15 @@ document.addEventListener('DOMContentLoaded', () => {
     initShareButton();
     initBooking();
     initScrollToTop();
-    initImageFallback();
+    initRegionCards();
     initLazyLoading();
     
     // Update date inputs on load
     updateDateInputs();
     updateGuestCounterDisplay();
+    calculateTotalPrice();
     
-    console.log('Le cocon de la Londonnerie - Site initialized');
+    console.log('Le cocon de la Londonnerie - Site initialized with Unsplash images');
 });
 
 // ===== Utility Functions =====
@@ -800,7 +829,6 @@ function initResponsiveNav() {
     checkScreenSize();
 }
 
-// Initialize responsive navigation
 document.addEventListener('DOMContentLoaded', initResponsiveNav);
 
 // ===== Accessibility Enhancements =====
@@ -856,6 +884,11 @@ document.addEventListener('click', (e) => {
     // Track calendar interaction
     if (target.closest('.date-picker') || target.closest('.calendar-day-full')) {
         trackEvent('calendar_interaction');
+    }
+    
+    // Track region cards
+    if (target.closest('.region-card')) {
+        trackEvent('region_card_click');
     }
 });
 
