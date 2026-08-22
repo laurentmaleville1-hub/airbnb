@@ -3,611 +3,575 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le cocon de la Londonnerie - Sarlat Périgord Noir | Airbnb</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <meta name="description" content="Appartement cosy avec décor londonien à Marcillac-Saint-Quentin, près de Sarlat-la-Canéda. Logement entier avec entrée privée, parking, WiFi et espace extérieur avec barbecue.">
+    <title>Le cocon de la Londonnerie - Sarlat Périgord Noir</title>
+    <meta name="description" content="Appartement cosy avec décor londonien à Marcillac-Saint-Quentin, près de Sarlat-la-Canéda. Découvrez ce logement unique alliant confort britannique et charme du Périgord Noir.">
     <meta property="og:title" content="Le cocon de la Londonnerie - Sarlat Périgord Noir">
     <meta property="og:description" content="Appartement cosy avec décor londonien à 5km de Sarlat">
     <meta property="og:image" content="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
-    <meta property="og:url" content="https://laurentmaleville1-hub.github.io/airbnb/">
+    <meta property="og:url" content="https://www.airbnb.com/h/londonnerie">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="header-container">
+    <!-- Hero Section with Navigation -->
+    <header class="hero-header">
+        <nav class="main-nav">
             <div class="logo">
-                <i class="fas fa-home"></i>
-                <span>airbnb</span>
+                <span class="logo-icon"><i class="fas fa-home"></i></span>
+                <span class="logo-text">Londonnerie</span>
             </div>
-            <nav class="main-nav">
-                <a href="#" class="nav-link">Logements</a>
-                <a href="#" class="nav-link">Expériences</a>
-                <a href="#" class="nav-link">Séjours</a>
-            </nav>
-            <div class="header-actions">
-                <button class="btn btn-secondary">Devenir hôte</button>
-                <button class="btn btn-secondary">Aide</button>
-                <button class="btn btn-secondary">S'inscrire</button>
-                <button class="btn btn-primary">Se connecter</button>
+            <ul class="nav-links">
+                <li><a href="#accommodation">Le Logement</a></li>
+                <li><a href="#gallery">Galerie</a></li>
+                <li><a href="#region">La Région</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="https://www.airbnb.com/h/londonnerie" class="btn-reserve" target="_blank" rel="noopener noreferrer">
+                <i class="fas fa-calendar-alt"></i>
+                Réserver sur Airbnb
+            </a>
+        </nav>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-subtitle">Sarlat Périgord Noir</span>
+                <h1 class="hero-title">Le cocon de la Londonnerie</h1>
+                <p class="hero-description">
+                    Un appartement cosy au décor londonien, alliant le charme britannique au cœur du Périgord Noir.
+                </p>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <i class="fas fa-star"></i>
+                        <span>4,96/5 - 45 avis</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-award"></i>
+                        <span>Superhost</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Marcillac-Saint-Quentin</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-scroll">
+                <span>Découvrez</span>
+                <i class="fas fa-chevron-down"></i>
             </div>
         </div>
     </header>
 
     <!-- Main Content -->
-    <main class="main-content">
-        <!-- Breadcrumb -->
-        <nav class="breadcrumb">
-            <a href="#">France</a>
-            <span>></span>
-            <a href="#">Nouvelle-Aquitaine</a>
-            <span>></span>
-            <a href="#">Dordogne</a>
-            <span>></span>
-            <span>Logements à Marcillac-Saint-Quentin</span>
-        </nav>
-
-        <!-- Title Section -->
-        <section class="listing-header">
-            <h1 class="listing-title">Le cocon de la Londonnerie - Sarlat Périgord Noir</h1>
-            <div class="listing-meta">
-                <div class="rating">
-                    <i class="fas fa-star"></i>
-                    <span>4,96</span>
-                    <span class="review-count">· 45 commentaires</span>
-                </div>
-                <div class="superhost-badge">
-                    <i class="fas fa-award"></i>
-                    <span>Superhost</span>
-                </div>
-                <div class="location">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Marcillac-Saint-Quentin, Nouvelle-Aquitaine, France</span>
+    <main>
+        <!-- Introduction Section -->
+        <section class="intro-section">
+            <div class="container">
+                <div class="intro-content">
+                    <div class="intro-text">
+                        <h2>Bienvenue dans notre cocon britannique</h2>
+                        <p>
+                            À seulement 5 km de Sarlat-la-Canéda, découvrez un appartement unique où le charme 
+                            londonien rencontre la douceur du Périgord. Une entrée privée, un parking sécurisé, 
+                            et un espace extérieur avec barbecue vous attendent pour un séjour inoubliable.
+                        </p>
+                        <p>
+                            Parfait pour les couples ou les voyageurs en quête de tranquillité, notre logement 
+                            allie confort moderne et ambiance chaleureuse, le tout dans un cadre verdoyant.
+                        </p>
+                    </div>
+                    <div class="intro-image">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Intérieur cosy de l'appartement" loading="lazy">
+                    </div>
                 </div>
             </div>
-            <div class="listing-actions">
-                <button class="btn btn-like">
-                    <i class="far fa-heart"></i>
-                </button>
-                <button class="btn btn-share">
-                    <i class="fas fa-share-alt"></i>
-                    <span>Partager</span>
-                </button>
+        </section>
+
+        <!-- Accommodation Section -->
+        <section id="accommodation" class="accommodation-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Votre séjour</span>
+                    <h2 class="section-title">Le Logement</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <i class="fas fa-home"></i>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                
+                <div class="accommodation-grid">
+                    <div class="accommodation-card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>2 voyageurs</h3>
+                        <p>Confortable pour un couple ou deux amis</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bed"></i>
+                        </div>
+                        <h3>1 chambre</h3>
+                        <p>Lit double queen size</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <div class="card-icon">
+                            <i class="fas fa-bath"></i>
+                        </div>
+                        <h3>1 salle de bain</h3>
+                        <p>Douche moderne et lavabo</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <div class="card-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>WiFi gratuit</h3>
+                        <p>Connexion haut débit incluse</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <div class="card-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3>Parking privé</h3>
+                        <p>Place réservée devant la maison</p>
+                    </div>
+                    <div class="accommodation-card">
+                        <div class="card-icon">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Cuisine équipée</h3>
+                        <p>Tout pour préparer vos repas</p>
+                    </div>
+                </div>
+
+                <div class="accommodation-details">
+                    <div class="details-left">
+                        <h3>Descriptif complet</h3>
+                        <p>
+                            <strong>Envie de dépaysement ?</strong> Notre appartement cosy au décor londonien vous transporte 
+                            dans une ambiance britannique, le tout dans une maison familiale à seulement 5 km de Sarlat.
+                        </p>
+                        <ul class="details-list">
+                            <li><i class="fas fa-check-circle"></i> Séjour/cuisine pratique et chaleureux</li>
+                            <li><i class="fas fa-check-circle"></i> Chambre avec lit double confortable</li>
+                            <li><i class="fas fa-check-circle"></i> Salle de bain avec douche et lavabo</li>
+                            <li><i class="fas fa-check-circle"></i> Toilettes séparées</li>
+                            <li><i class="fas fa-check-circle"></i> Espace extérieur privé avec table, chaises et barbecue électrique</li>
+                            <li><i class="fas fa-check-circle"></i> Local à vélos sécurisé</li>
+                        </ul>
+                    </div>
+                    <div class="details-right">
+                        <div class="details-image">
+                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Chambre avec lit double" loading="lazy">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Gallery Section -->
-        <section class="gallery-section">
-            <div class="gallery-main">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" alt="Appartement cosy avec décor britannique - Le cocon de la Londonnerie" class="gallery-main-image" loading="lazy">
-                <button class="gallery-prev">
-                    <i class="fas fa-chevron-left"></i>
-                </button>
-                <button class="gallery-next">
-                    <i class="fas fa-chevron-right"></i>
-                </button>
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">En images</span>
+                    <h2 class="section-title">Galerie photo</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <i class="fas fa-camera"></i>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item large">
+                        <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Salon cosy avec décor britannique" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>Salon & Cuisine</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chambre confortable" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>Chambre</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1582582494705-f8ce0b04046a?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Salle de bain moderne" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>Salle de bain</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Espace extérieur avec barbecue" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>Extérieur</span>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Vue sur le jardin" loading="lazy">
+                        <div class="gallery-overlay">
+                            <i class="fas fa-expand"></i>
+                            <span>Jardin</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="gallery-thumbnails">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Salon cuisine cosy" class="thumbnail active" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Chambre avec lit double" class="thumbnail" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1582582494705-f8ce0b04046a?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Salle de bain moderne" class="thumbnail" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Espace extérieur avec barbecue" class="thumbnail" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Vue sur le jardin" class="thumbnail" loading="lazy">
-            </div>
-            <button class="gallery-fullscreen">
-                <i class="fas fa-expand"></i>
-                <span>Afficher toutes les photos</span>
-            </button>
         </section>
 
-        <!-- Listing Details -->
-        <section class="listing-details">
-            <div class="details-left">
-                <!-- Host Info -->
-                <div class="host-section">
-                    <h2>Logement entier : condo · Marcillac-Saint-Quentin</h2>
-                    <div class="host-info">
-                        <div class="host-avatar">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Nathalie - Superhost" loading="lazy">
-                        </div>
-                        <div class="host-details">
-                            <h3>Hébergé par Nathalie</h3>
-                            <p>Superhost · 1 an d'expérience</p>
-                        </div>
+        <!-- Region Section -->
+        <section id="region" class="region-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">À découvrir</span>
+                    <h2 class="section-title">La Région</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <i class="fas fa-map-marked-alt"></i>
+                        <span class="line"></span>
                     </div>
                 </div>
-
-                <!-- Capacity -->
-                <div class="capacity-section">
-                    <div class="capacity-item">
-                        <i class="fas fa-users"></i>
-                        <span>2 voyageurs</span>
-                    </div>
-                    <div class="capacity-item">
-                        <i class="fas fa-bed"></i>
-                        <span>1 chambre</span>
-                    </div>
-                    <div class="capacity-item">
-                        <i class="fas fa-couch"></i>
-                        <span>1 lit</span>
-                    </div>
-                    <div class="capacity-item">
-                        <i class="fas fa-bath"></i>
-                        <span>1 salle de bain</span>
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="description-section">
-                    <h3>Description</h3>
-                    <p class="description-text">
-                        <strong>Envie de dépaysement ?</strong> Découvrez cet appartement cosy au décor londonien, dans une maison familiale 
-                        (à environ 5 km de Sarlat avec entrée privée, parking et WiFi)
-                    </p>
-                    <ul class="features-list">
-                        <li><i class="fas fa-check"></i> Séjour/cuisine pratique et chaleureux</li>
-                        <li><i class="fas fa-check"></i> Chambre avec lit double</li>
-                        <li><i class="fas fa-check"></i> Salle de bain avec douche et lavabo</li>
-                        <li><i class="fas fa-check"></i> Espace extérieur avec barbecue électrique</li>
-                    </ul>
-                    <p class="description-text">
-                        Idéal pour la détente ou l'exploration de la région, cet appartement allie confort, calme et une touche britannique.
-                    </p>
-                    <p class="description-text">
-                        À proximité des commerces, restaurants, sites touristiques (Lascaux, Sarlat, Castelnaud...)
+                
+                <div class="region-description">
+                    <p>
+                        Situé à <strong>Marcillac-Saint-Quentin</strong>, notre logement vous place au cœur du <strong>Périgord Noir</strong>, 
+                        l'une des régions les plus pittoresques de France. Entre forêts, châteaux, grottes préhistoriques 
+                        et villages médiévaux, vous ne manquerez pas d'activités et de paysages à couper le souffle.
                     </p>
                 </div>
 
-                <!-- Space Details -->
-                <div class="space-section">
-                    <h3>Le logement</h3>
-                    <p>Envie de dépaysement sans prendre l'Eurostar ? Installez-vous dans cet appartement cosy au décor londonien, situé dans une maison familiale mais avec une entrée privée (vous êtes chez vous, mais en vacances).</p>
-                    <p>Un logement calme avec toutes les commodités dont vous avez besoin, et même plus :</p>
-                    <ul class="space-features">
-                        <li>🛋️ Un séjour/cuisine pratique et chaleureux, pour siroter une tasse de thé ou préparer votre spécialité (haricots sur toast en option)</li>
-                        <li>🛏️ Une chambre avec un lit double confortable, parfait pour rêver de Buckingham</li>
-                        <li>🚿 Une salle de bain avec douche et lavabo – Charles III n'y est jamais passé, mais c'est propre et fonctionnel</li>
-                        <li>🚽 Des toilettes séparées, car le confort c'est aussi les petits détails</li>
-                        <li>🚗 Une place de parking réservée – votre voiture aussi pourra prendre des vacances vertes</li>
-                        <li>🚲 Un local à vélos sécurisé – idéal pour profiter des nombreuses balades à vélo dans le coin</li>
-                        <li>🌿 Et la cerise sur le gâteau : un espace extérieur rien que pour vous, avec une table, des chaises, et un barbecue électrique !</li>
-                    </ul>
-                    <p>Entre calme, confort, clin d'œil britannique et possibilité de manger dehors, ce petit appartement a tout pour plaire aux voyageurs en quête d'un séjour original et reposant, avec facilité.</p>
-                    <p>🧸 Que vous soyez là pour explorer, vous reposer, ou simplement pour un dépaysement, nous vous accueillons avec plaisir et bonne humeur ! Thé, café et petits conseils locaux sont toujours disponibles – on aime partager les bons plans autant que les bons moments.</p>
-                </div>
-
-                <!-- Highlights -->
-                <div class="highlights-section">
-                    <h3>Points forts du logement</h3>
-                    <div class="highlights-grid">
-                        <div class="highlight-card">
-                            <i class="fas fa-trophy"></i>
-                            <div>
-                                <h4>Top 5% des logements</h4>
-                                <p>Ce logement est très bien noté en fonction des évaluations, des commentaires et de la fiabilité.</p>
-                            </div>
+                <div class="region-grid">
+                    <div class="region-card">
+                        <div class="region-image">
+                            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Sarlat-la-Canéda" loading="lazy">
                         </div>
-                        <div class="highlight-card">
-                            <i class="fas fa-key"></i>
-                            <div>
-                                <h4>Arrivée autonome</h4>
-                                <p>Faites votre entrée vous-même avec la boîte à clé.</p>
-                            </div>
-                        </div>
-                        <div class="highlight-card">
-                            <i class="fas fa-volume-mute"></i>
-                            <div>
-                                <h4>Calme et sérénité</h4>
-                                <p>Les voyageurs disent que ce logement est situé dans un quartier calme.</p>
+                        <div class="region-content">
+                            <h3>Sarlat-la-Canéda</h3>
+                            <p>Vieille ville médiévale à 5 minutes</p>
+                            <div class="region-distance">
+                                <i class="fas fa-car"></i>
+                                <span>5 min</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Sleeping Arrangements -->
-                <div class="sleeping-section">
-                    <h3>Où vous dormirez</h3>
-                    <div class="sleeping-arrangement">
-                        <div class="bedroom-card">
-                            <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Chambre" class="bedroom-image" loading="lazy">
-                            <div class="bedroom-info">
-                                <h4>Chambre</h4>
-                                <p>1 lit double</p>
+                    <div class="region-card">
+                        <div class="region-image">
+                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Grottes de Lascaux" loading="lazy">
+                        </div>
+                        <div class="region-content">
+                            <h3>Grottes de Lascaux</h3>
+                            <p>Art préhistorique exceptionnel</p>
+                            <div class="region-distance">
+                                <i class="fas fa-car"></i>
+                                <span>25 min</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Amenities -->
-                <div class="amenities-section">
-                    <h3>Ce que propose ce logement</h3>
-                    <div class="amenities-grid">
-                        <div class="amenity-item">
-                            <i class="fas fa-wifi"></i>
-                            <span>Wifi</span>
+                    <div class="region-card">
+                        <div class="region-image">
+                            <img src="https://images.unsplash.com/photo-1598544838349-13b6044c367f?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Château de Castelnaud" loading="lazy">
                         </div>
-                        <div class="amenity-item">
-                            <i class="fas fa-utensils"></i>
-                            <span>Cuisine</span>
-                        </div>
-                        <div class="amenity-item">
-                            <i class="fas fa-laptop"></i>
-                            <span>Espace de travail dédié</span>
-                        </div>
-                        <div class="amenity-item">
-                            <i class="fas fa-tree"></i>
-                            <span>Vue sur le jardin</span>
-                        </div>
-                        <div class="amenity-item">
-                            <i class="fas fa-car"></i>
-                            <span>Parking gratuit sur place</span>
-                        </div>
-                        <div class="amenity-item">
-                            <i class="fas fa-fire"></i>
-                            <span>Barbecue</span>
-                        </div>
-                        <div class="amenity-item">
-                            <i class="fas fa-bicycle"></i>
-                            <span>Local à vélos</span>
-                        </div>
-                        <div class="amenity-item">
-                            <i class="fas fa-tv"></i>
-                            <span>Télévision</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Guest Access -->
-                <div class="access-section">
-                    <h3>Accès des voyageurs</h3>
-                    <p>Nous veillons à accueillir nos voyageurs en personne dès que possible, afin de vous remettre les clés, vous montrer le logement et répondre à vos premières questions.</p>
-                    <p>Si les horaires ne coïncident pas ou si vous préférez plus de flexibilité, l'arrivée autonome est également possible grâce à une boîte à clé sécurisée. Les instructions vous seront envoyées la veille de votre arrivée.</p>
-                    <p><strong>Horaires habituels :</strong></p>
-                    <ul>
-                        <li>Arrivée : à partir de 15h</li>
-                        <li>Départ : avant 10h</li>
-                    </ul>
-                    <p>Nous restons disponibles tout au long de votre séjour pour toute question ou conseil local. Vous pouvez facilement nous joindre par téléphone ou message.</p>
-                </div>
-
-                <!-- Location -->
-                <div class="location-section">
-                    <h3>Où vous serez</h3>
-                    <p>Marcillac-Saint-Quentin, Nouvelle-Aquitaine, France</p>
-                    <p>Emplacement exact communiqué après la réservation.</p>
-                    
-                    <!-- Region Photos -->
-                    <div class="region-photos">
-                        <h4>Découvrez la région</h4>
-                        <div class="region-grid">
-                            <div class="region-card">
-                                <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Sarlat-la-Canéda - Vieille ville" loading="lazy">
-                                <div class="region-overlay">
-                                    <span>Sarlat-la-Canéda</span>
-                                </div>
-                            </div>
-                            <div class="region-card">
-                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Château de Castelnaud" loading="lazy">
-                                <div class="region-overlay">
-                                    <span>Château de Castelnaud</span>
-                                </div>
-                            </div>
-                            <div class="region-card">
-                                <img src="https://images.unsplash.com/photo-1598544838349-13b6044c367f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="La Roque-Gageac" loading="lazy">
-                                <div class="region-overlay">
-                                    <span>La Roque-Gageac</span>
-                                </div>
-                            </div>
-                            <div class="region-card">
-                                <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Rivière Dordogne" loading="lazy">
-                                <div class="region-overlay">
-                                    <span>Rivière Dordogne</span>
-                                </div>
+                        <div class="region-content">
+                            <h3>Château de Castelnaud</h3>
+                            <p>Forteresse médiévale impressionnante</p>
+                            <div class="region-distance">
+                                <i class="fas fa-car"></i>
+                                <span>30 min</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Reviews -->
-                <div class="reviews-section">
-                    <div class="reviews-header">
-                        <div class="reviews-rating">
-                            <i class="fas fa-star"></i>
-                            <span>4,96</span>
-                            <span class="review-count">· 45 commentaires</span>
+                    <div class="region-card">
+                        <div class="region-image">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="La Roque-Gageac" loading="lazy">
                         </div>
-                        <div class="reviews-stats">
-                            <div class="stat-item">
-                                <span class="stat-value">Propreté</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                                <span class="stat-rating">4,9</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">Précision</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <span class="stat-rating">5,0</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">Arrivée</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                                <span class="stat-rating">4,9</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">Communication</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <span class="stat-rating">5,0</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">Emplacement</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
-                                <span class="stat-rating">4,9</span>
-                            </div>
-                            <div class="stat-item">
-                                <span class="stat-value">Rapport qualité-prix</span>
-                                <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
-                                <span class="stat-rating">5,0</span>
+                        <div class="region-content">
+                            <h3>La Roque-Gageac</h3>
+                            <p>Village troglodytique classé</p>
+                            <div class="region-distance">
+                                <i class="fas fa-car"></i>
+                                <span>20 min</span>
                             </div>
                         </div>
                     </div>
-                    <div class="guest-favorite">
-                        <i class="fas fa-award"></i>
-                        <span>Coup de cœur des voyageurs</span>
-                        <p>Ce logement fait partie des 5 % de logements les plus appréciés sur Airbnb en fonction des évaluations, des commentaires et de la fiabilité.</p>
-                    </div>
-                </div>
-
-                <!-- Host Info -->
-                <div class="host-profile-section">
-                    <h3>Rencontrez votre hôte : Nathalie</h3>
-                    <div class="host-profile">
-                        <div class="host-avatar-large">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Nathalie" loading="lazy">
+                    <div class="region-card">
+                        <div class="region-image">
+                            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Rivière Dordogne" loading="lazy">
                         </div>
-                        <div class="host-profile-details">
-                            <div class="host-badge">Superhost</div>
-                            <p>45 commentaires · 1 an d'expérience</p>
-                            <div class="host-response">
-                                <i class="fas fa-clock"></i>
-                                <span>Temps de réponse : dans l'heure</span>
-                            </div>
-                            <div class="host-response">
-                                <i class="fas fa-percentage"></i>
-                                <span>Taux de réponse : 100%</span>
-                            </div>
-                            <p class="host-bio">Né(e) dans les années 80 · A étudié à : Nice</p>
-                        </div>
-                    </div>
-                    <p class="host-description">
-                        Les Superhosts sont des hôtes expérimentés, très bien notés, qui s'engagent à offrir d'excellents séjours aux voyageurs.
-                    </p>
-                    <div class="co-hosts">
-                        <span><strong>Co-hôtes :</strong> Laurent</span>
-                    </div>
-                    <button class="btn btn-secondary host-contact">
-                        <i class="fas fa-envelope"></i>
-                        <span>Contacter l'hôte</span>
-                    </button>
-                </div>
-
-                <!-- Things to Know -->
-                <div class="things-to-know">
-                    <h3>À savoir</h3>
-                    <div class="know-grid">
-                        <div class="know-card">
-                            <i class="fas fa-calendar-alt"></i>
-                            <div>
-                                <h4>Règlement intérieur</h4>
-                                <ul>
-                                    <li>Arrivée : après 16:00</li>
-                                    <li>Départ : avant 10:00</li>
-                                    <li>2 voyageurs maximum</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="know-card">
-                            <i class="fas fa-shield-alt"></i>
-                            <div>
-                                <h4>Sécurité et logement</h4>
-                                <ul>
-                                    <li>Caméras de surveillance extérieures sur la propriété</li>
-                                    <li>Détecteur de monoxyde de carbone non requis</li>
-                                    <li>Détecteur de fumée</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="know-card">
-                            <i class="fas fa-ban"></i>
-                            <div>
-                                <h4>Politique d'annulation</h4>
-                                <p>Ajoutez vos dates de voyage pour obtenir les détails de l'annulation pour ce séjour.</p>
+                        <div class="region-content">
+                            <h3>Rivière Dordogne</h3>
+                            <p>Balades en canoë et paysages</p>
+                            <div class="region-distance">
+                                <i class="fas fa-car"></i>
+                                <span>15 min</span>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Important Notes -->
-                <div class="important-notes">
-                    <h3>Autres points à noter</h3>
-                    <ul>
-                        <li>🚗 Une place de parking vous est réservée juste pour vous</li>
-                        <li>🚪 L'entrée est totalement indépendante : vous êtes chez vous, mais sans les factures</li>
-                        <li>🌿 L'espace extérieur est privé, avec table, chaises et barbecue électrique – pour griller (ou apéritifs tranquilles)</li>
-                        <li>🏡 Le logement est situé dans une maison familiale calme. Nous vous demandons simplement de respecter la tranquillité des lieux (et des voisins)</li>
-                        <li>👶 Nous aimons les enfants (nous en avons deux !) mais le logement n'est pas adapté aux jeunes enfants et bébés</li>
-                        <li>🧹 Le ménage est inclus, mais nous vous remercions de laisser l'appartement en bon état (pas besoin de frotter, juste un peu de bon sens avant le départ)</li>
-                        <li>♻️ Tri sélectif en place : les informations sont dans le livret d'accueil. Merci de jouer le jeu pour la planète 🌍</li>
-                        <li>🐾 Désolé, les animaux ne sont pas acceptés, même les très mignons</li>
-                        <li>🚭 Et pour garder l'endroit agréable pour tous : <strong>non-fumeur à l'intérieur !!</strong></li>
-                    </ul>
-                </div>
-
-                <!-- Nearby Attractions -->
-                <div class="nearby-section">
-                    <h3>À proximité</h3>
-                    <div class="attractions-grid">
-                        <div class="attraction-card">
-                            <img src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarlat" loading="lazy">
-                            <div class="attraction-info">
-                                <i class="fas fa-building"></i>
-                                <div>
-                                    <h4>Sarlat-la-Canéda</h4>
-                                    <p>5 minutes en voiture</p>
-                                </div>
-                            </div>
+                    <div class="region-card">
+                        <div class="region-image">
+                            <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Marchés locaux" loading="lazy">
                         </div>
-                        <div class="attraction-card">
-                            <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Lascaux" loading="lazy">
-                            <div class="attraction-info">
-                                <i class="fas fa-cave"></i>
-                                <div>
-                                    <h4>Grottes de Lascaux</h4>
-                                    <p>25 minutes en voiture</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="attraction-card">
-                            <img src="https://images.unsplash.com/photo-1598544838349-13b6044c367f?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Castelnaud" loading="lazy">
-                            <div class="attraction-info">
-                                <i class="fas fa-castle"></i>
-                                <div>
-                                    <h4>Château de Castelnaud</h4>
-                                    <p>30 minutes en voiture</p>
-                                </div>
+                        <div class="region-content">
+                            <h3>Marchés & Gastronomie</h3>
+                            <p>Découvrez les spécialités du Périgord</p>
+                            <div class="region-distance">
+                                <i class="fas fa-utensils"></i>
+                                <span>Proche</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <!-- Sidebar -->
-            <div class="details-sidebar">
-                <!-- Booking Card -->
-                <div class="booking-card">
-                    <div class="booking-header">
-                        <div class="price-display">
-                            <span class="price-amount">À partir de <strong>€65</strong></span>
-                            <span class="price-night">/ nuit</span>
-                        </div>
+        <!-- Highlights Section -->
+        <section class="highlights-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Pourquoi choisir ?</span>
+                    <h2 class="section-title">Nos atouts</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <i class="fas fa-gem"></i>
+                        <span class="line"></span>
                     </div>
+                </div>
+                
+                <div class="highlights-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3>Top 5% des logements</h3>
+                        <p>Classé parmi les meilleurs hébergements Airbnb en fonction des avis et de la fiabilité.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h3>Superhost</h3>
+                        <p>Nathalie est une hôte expérimentée, très bien notée, engagée à offrir d'excellents séjours.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3>Arrivée flexible</h3>
+                        <p>Accueil en personne ou arrivée autonome avec boîte à clé sécurisée.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-volume-mute"></i>
+                        </div>
+                        <h3>Calme absolu</h3>
+                        <p>Situé dans un quartier résidentiel paisible, loin de l'agitation.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Coup de cœur</h3>
+                        <p>Nos voyageurs adorent l'ambiance unique de notre logement.</p>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-wifi"></i>
+                        </div>
+                        <h3>Équipements complets</h3>
+                        <p>Tout le confort nécessaire pour un séjour sans souci.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                    <div class="booking-form">
-                        <div class="form-group">
-                            <label>Arrivée</label>
-                            <div class="date-picker">
-                                <input type="text" id="checkin-date" placeholder="Ajouter une date" readonly>
-                                <i class="fas fa-calendar-alt"></i>
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Ils en parlent</span>
+                    <h2 class="section-title">Avis des voyageurs</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <i class="fas fa-quote-left"></i>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                
+                <div class="testimonials-grid">
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Voyageur 1" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Marie & Thomas</h4>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label>Départ</label>
-                            <div class="date-picker">
-                                <input type="text" id="checkout-date" placeholder="Ajouter une date" readonly>
-                                <i class="fas fa-calendar-alt"></i>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label>Voyageurs</label>
-                            <div class="guest-selector">
-                                <input type="text" id="guest-count" value="1 voyageur" readonly>
-                                <i class="fas fa-chevron-down"></i>
-                            </div>
-                        </div>
-                        <button class="btn btn-primary btn-large btn-book">
-                            <span>Réserver</span>
-                        </button>
-                        <p class="booking-note">Vous ne serez pas facturé encore</p>
-                    </div>
-
-                    <div class="booking-details">
-                        <div class="booking-detail">
-                            <i class="fas fa-home"></i>
-                            <span>Logement entier : condo</span>
-                        </div>
-                        <div class="booking-detail">
-                            <i class="fas fa-bed"></i>
-                            <span>1 lit</span>
-                        </div>
-                        <div class="booking-detail">
-                            <i class="fas fa-bath"></i>
-                            <span>1 salle de bain</span>
+                        <div class="testimonial-content">
+                            <p>"Un vrai coup de cœur ! L'appartement est encore plus joli que sur les photos. Le décor britannique est très réussi et l'accueil de Nathalie était parfait. On se sent comme à la maison !"</p>
                         </div>
                     </div>
-
-                    <div class="total-price">
-                        <div class="price-breakdown">
-                            <span>€65 x 1 nuit</span>
-                            <span>€65</span>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Voyageur 2" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Sophie</h4>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="price-breakdown">
-                            <span>Frais de ménage</span>
-                            <span>Inclus</span>
+                        <div class="testimonial-content">
+                            <p>"L'espace extérieur avec le barbecue est un vrai plus ! Nous avons passé des soirées magnifiques. Le logement est très propre et très bien équipé. À recommander sans hésitation !"</p>
                         </div>
-                        <div class="price-breakdown">
-                            <span>Frais de service</span>
-                            <span>Inclus</span>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-header">
+                            <div class="testimonial-avatar">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Voyageur 3" loading="lazy">
+                            </div>
+                            <div class="testimonial-info">
+                                <h4>Pierre & Claire</h4>
+                                <div class="testimonial-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                        <div class="price-breakdown total">
-                            <span><strong>Total</strong></span>
-                            <span><strong>€65</strong></span>
+                        <div class="testimonial-content">
+                            <p>"Emplacement idéal pour visiter la région. Proche de Sarlat mais au calme. L'appartement est très cosy et le parking privé est un vrai confort. Merci pour ce séjour !"</p>
                         </div>
                     </div>
                 </div>
-
-                <!-- Calendar Preview -->
-                <div class="calendar-preview">
-                    <h4>Disponibilités</h4>
-                    <div class="calendar-grid">
-                        <div class="calendar-day available">1</div>
-                        <div class="calendar-day available">2</div>
-                        <div class="calendar-day available">3</div>
-                        <div class="calendar-day available">4</div>
-                        <div class="calendar-day available">5</div>
-                        <div class="calendar-day available">6</div>
-                        <div class="calendar-day available">7</div>
-                        <div class="calendar-day available">8</div>
-                        <div class="calendar-day booked">9</div>
-                        <div class="calendar-day booked">10</div>
-                        <div class="calendar-day available">11</div>
-                        <div class="calendar-day available">12</div>
-                        <div class="calendar-day available">13</div>
-                        <div class="calendar-day available">14</div>
+                
+                <div class="testimonials-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">4,96</span>
+                        <span class="stat-label">/5</span>
                     </div>
-                    <a href="#" class="calendar-link">Voir le calendrier complet</a>
-                </div>
-
-                <!-- Important Info Sidebar -->
-                <div class="sidebar-info">
-                    <div class="info-card">
-                        <i class="fas fa-exclamation-circle"></i>
-                        <div>
-                            <h4>Règlement intérieur</h4>
-                            <p>Arrivée : après 16:00<br>Départ : avant 10:00</p>
-                        </div>
+                    <div class="stat-separator">|</div>
+                    <div class="stat-item">
+                        <span class="stat-number">45</span>
+                        <span class="stat-label">avis</span>
                     </div>
-                    <div class="info-card">
-                        <i class="fas fa-shield-alt"></i>
-                        <div>
-                            <h4>Sécurité et logement</h4>
-                            <p>Caméras de surveillance extérieures</p>
-                        </div>
-                    </div>
-                    <div class="info-card">
-                        <i class="fas fa-ban-smoking"></i>
-                        <div>
-                            <h4>Politique d'annulation</h4>
-                            <p>Ajoutez vos dates pour plus de détails</p>
-                        </div>
+                    <div class="stat-separator">|</div>
+                    <div class="stat-item">
+                        <i class="fas fa-award"></i>
+                        <span class="stat-label">Superhost</span>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- Share Section -->
-                <div class="share-section">
-                    <h4>Partager</h4>
-                    <div class="share-buttons">
-                        <button class="share-btn"><i class="fab fa-facebook"></i></button>
-                        <button class="share-btn"><i class="fab fa-twitter"></i></button>
-                        <button class="share-btn"><i class="fab fa-whatsapp"></i></button>
-                        <button class="share-btn"><i class="fas fa-envelope"></i></button>
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Contactez-nous</span>
+                    <h2 class="section-title">Réservez votre séjour</h2>
+                    <div class="title-decoration">
+                        <span class="line"></span>
+                        <i class="fas fa-calendar-check"></i>
+                        <span class="line"></span>
+                    </div>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Le cocon de la Londonnerie</h3>
+                        <p>Marcillac-Saint-Quentin, Dordogne (24)</p>
+                        <p>Nouvelle-Aquitaine, France</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>À 5 km de Sarlat-la-Canéda</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-car"></i>
+                                <span>Parking privé gratuit</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>WiFi haut débit</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-home"></i>
+                                <span>Entrée privée indépendante</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-cta">
+                        <h3>Prêt à réserver ?</h3>
+                        <p>
+                            Découvrez les disponibilités et réservez directement sur Airbnb 
+                            pour bénéficier de la garantie Airbnb et des avis vérifiés.
+                        </p>
+                        <a href="https://www.airbnb.com/h/londonnerie" class="btn-reserve-large" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-calendar-alt"></i>
+                            Réserver sur Airbnb
+                        </a>
+                        <div class="contact-notes">
+                            <p><i class="fas fa-info-circle"></i> Vous serez redirigé vers la plateforme Airbnb pour finaliser votre réservation.</p>
+                            <p><i class="fas fa-shield-alt"></i> Paiement sécurisé et protection Airbnb incluses.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Host Section -->
+        <section class="host-section">
+            <div class="container">
+                <div class="host-card">
+                    <div class="host-image">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Nathalie - Votre hôte" loading="lazy">
+                    </div>
+                    <div class="host-info">
+                        <div class="host-badge">
+                            <i class="fas fa-award"></i>
+                            <span>Superhost</span>
+                        </div>
+                        <h3>Nathalie</h3>
+                        <p>Votre hôte</p>
+                        <div class="host-stats">
+                            <div class="host-stat">
+                                <i class="fas fa-star"></i>
+                                <span>4,96/5</span>
+                            </div>
+                            <div class="host-stat">
+                                <i class="fas fa-comments"></i>
+                                <span>45 avis</span>
+                            </div>
+                            <div class="host-stat">
+                                <i class="fas fa-hourglass-half"></i>
+                                <span>1 an d'expérience</span>
+                            </div>
+                        </div>
+                        <p class="host-description">
+                            "Nous aimons accueillir nos voyageurs avec plaisir et bonne humeur ! 
+                            Thé, café et petits conseils locaux sont toujours disponibles."
+                        </p>
                     </div>
                 </div>
             </div>
@@ -616,157 +580,37 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-sections">
-                <div class="footer-section">
-                    <h5>Assistance</h5>
-                    <ul>
-                        <li><a href="#">Centre d'aide</a></li>
-                        <li><a href="#">AirCover</a></li>
-                        <li><a href="#">Anti-discrimination</a></li>
-                        <li><a href="#">Assistance aux personnes handicapées</a></li>
-                        <li><a href="#">Options d'annulation</a></li>
-                        <li><a href="#">Signaler un problème de voisinage</a></li>
-                    </ul>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-icon"><i class="fas fa-home"></i></span>
+                    <span class="logo-text">Londonnerie</span>
                 </div>
-                <div class="footer-section">
-                    <h5>Communauté</h5>
-                    <ul>
-                        <li><a href="#">Accueil des voyageurs</a></li>
-                        <li><a href="#">Devenir hôte</a></li>
-                        <li><a href="#">Hébergements Airbnb Plus</a></li>
-                        <li><a href="#">Airbnb Experiences</a></li>
-                        <li><a href="#">Ressources pour les hôtes</a></li>
-                    </ul>
+                <p class="footer-tagline">Le cocon britannique au cœur du Périgord Noir</p>
+                <div class="footer-links">
+                    <a href="#accommodation">Le Logement</a>
+                    <a href="#gallery">Galerie</a>
+                    <a href="#region">La Région</a>
+                    <a href="#contact">Contact</a>
                 </div>
-                <div class="footer-section">
-                    <h5>Airbnb</h5>
-                    <ul>
-                        <li><a href="#">2025 Airbnb, Inc.</a></li>
-                        <li><a href="#">Confidentialité</a></li>
-                        <li><a href="#">Conditions</a></li>
-                        <li><a href="#">Plan du site</a></li>
-                        <li><a href="#">Informations sur l'entreprise</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h5>Découvrez</h5>
-                    <ul>
-                        <li><a href="#">Sécurité des paiements</a></li>
-                        <li><a href="#">Carrière</a></li>
-                        <li><a href="#">Investisseurs</a></li>
-                        <li><a href="#">Locations saisonnières</a></li>
-                        <li><a href="#">Hébergements insolites</a></li>
-                    </ul>
+                <div class="footer-social">
+                    <a href="https://www.airbnb.com/h/londonnerie" target="_blank" rel="noopener noreferrer" class="social-link">
+                        <i class="fab fa-airbnb"></i>
+                        <span>Airbnb</span>
+                    </a>
                 </div>
             </div>
             <div class="footer-bottom">
-                <div class="footer-logo">
-                    <i class="fas fa-home"></i>
-                    <span>airbnb</span>
-                </div>
-                <div class="footer-links">
-                    <a href="#">© 2025 Airbnb, Inc.</a>
-                    <a href="#">Confidentialité</a>
-                    <a href="#">Conditions</a>
-                    <a href="#">Plan du site</a>
-                </div>
-                <div class="footer-social">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                </div>
+                <p>&copy; 2025 Le cocon de la Londonnerie | Tous droits réservés</p>
+                <p>Site de présentation - Réservation exclusive sur <a href="https://www.airbnb.com/h/londonnerie" target="_blank">Airbnb</a></p>
             </div>
         </div>
     </footer>
 
-    <!-- Modal for Gallery -->
-    <div id="gallery-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-modal">&times;</span>
-            <div class="modal-gallery">
-                <img src="" id="modal-image" class="modal-image">
-                <button class="modal-prev"><i class="fas fa-chevron-left"></i></button>
-                <button class="modal-next"><i class="fas fa-chevron-right"></i></button>
-            </div>
-            <div class="modal-thumbnails">
-                <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="modal-thumbnail active" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="modal-thumbnail" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1582582494705-f8ce0b04046a?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="modal-thumbnail" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="modal-thumbnail" loading="lazy">
-                <img src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" class="modal-thumbnail" loading="lazy">
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Calendar -->
-    <div id="calendar-modal" class="modal">
-        <div class="modal-content calendar-modal-content">
-            <span class="close-modal">&times;</span>
-            <h3>Sélectionnez vos dates</h3>
-            <div class="full-calendar">
-                <div class="calendar-header">
-                    <button class="calendar-nav"><i class="fas fa-chevron-left"></i></button>
-                    <span id="calendar-month">Juillet 2025</span>
-                    <button class="calendar-nav"><i class="fas fa-chevron-right"></i></button>
-                </div>
-                <div class="calendar-weekdays">
-                    <span>Lun</span>
-                    <span>Mar</span>
-                    <span>Mer</span>
-                    <span>Jeu</span>
-                    <span>Ven</span>
-                    <span>Sam</span>
-                    <span>Dim</span>
-                </div>
-                <div class="calendar-days" id="calendar-days"></div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Modal for Guest Selector -->
-    <div id="guest-modal" class="modal">
-        <div class="modal-content guest-modal-content">
-            <span class="close-modal">&times;</span>
-            <h3>Nombre de voyageurs</h3>
-            <div class="guest-counters">
-                <div class="guest-counter">
-                    <div class="counter-header">
-                        <h4>Adultes</h4>
-                        <p>À partir de 13 ans</p>
-                    </div>
-                    <div class="counter-controls">
-                        <button class="counter-btn minus">-</button>
-                        <span class="counter-value">1</span>
-                        <button class="counter-btn plus">+</button>
-                    </div>
-                </div>
-                <div class="guest-counter">
-                    <div class="counter-header">
-                        <h4>Enfants</h4>
-                        <p>2-12 ans</p>
-                    </div>
-                    <div class="counter-controls">
-                        <button class="counter-btn minus">-</button>
-                        <span class="counter-value">0</span>
-                        <button class="counter-btn plus">+</button>
-                    </div>
-                </div>
-                <div class="guest-counter">
-                    <div class="counter-header">
-                        <h4>Bébés</h4>
-                        <p>Moins de 2 ans</p>
-                    </div>
-                    <div class="counter-controls">
-                        <button class="counter-btn minus">-</button>
-                        <span class="counter-value">0</span>
-                        <button class="counter-btn plus">+</button>
-                    </div>
-                </div>
-            </div>
-            <p class="guest-max">Maximum : 2 voyageurs</p>
-        </div>
-    </div>
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
 
     <script src="script.js"></script>
 </body>
