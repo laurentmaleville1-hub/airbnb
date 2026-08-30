@@ -194,9 +194,9 @@ strong {
     flex-direction: column;
     background-image: url("./images/Capture d’écran 2026-08-22 à 14.44.37.png");
     background-size: cover;
-    background-position: center;
-    background-size: 100% auto;
-    background-position: center top;
+   background-size: 80% auto;
+background-position: center;
+background-repeat: no-repeat;
     color: var(--white);
     overflow: hidden;
 }
